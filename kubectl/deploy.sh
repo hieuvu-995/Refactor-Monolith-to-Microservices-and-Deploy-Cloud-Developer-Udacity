@@ -11,8 +11,8 @@ kubectl apply -f api-user-service.yaml
 kubectl apply -f reverseproxy-deployment.yaml
 kubectl apply -f reverseproxy-service.yaml
 
-kubectl apply -f frontend-deployment.yaml
-kubectl apply -f frontend-service.yaml
+kubectl apply -f fronted-deployment.yaml
+kubectl apply -f fronted-service.yaml
 
 
 #kubectl expose deployment reverseproxy --type=LoadBalancer --name=publicreverseproxy
