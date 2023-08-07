@@ -13,5 +13,5 @@ script:
   - docker tag udagram-reverseproxy $DOCKERHUB_USERNAME/udagram-reverseproxy:v1
   - docker push $DOCKERHUB_USERNAME/udagram-api-feed:v1
   - docker push $DOCKERHUB_USERNAME/udagram-api-user:v1
-  - docker push $DOCKERHUB_USERNAME/udagram-frontend:v6
+  - docker push $DOCKERHUB_USERNAME/udagram-frontend:v1
   - docker push $DOCKERHUB_USERNAME/udagram-reverseproxy:v1
