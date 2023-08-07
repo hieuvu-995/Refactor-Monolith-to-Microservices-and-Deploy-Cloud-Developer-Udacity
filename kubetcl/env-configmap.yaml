@@ -8,5 +8,4 @@ data:
   AWS_BUCKET: :my-aws-buket
   AWS_REGION: us-east-1
   AWS_PROFILE: default
-  JWT_SECRET: testing
   URL: http://localhost:8100
