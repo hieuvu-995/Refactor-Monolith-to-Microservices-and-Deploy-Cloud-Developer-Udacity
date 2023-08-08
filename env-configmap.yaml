@@ -5,6 +5,7 @@ metadata:
   namespace: default
 data:
   POSTGRES_HOST: database-udacity.csjl9wc4athb.us-east-1.rds.amazonaws.com
+  JWT_SECRET: Th1s1sR4nd0mS3cr3t
   POSTGRES_DB: postgres
   AWS_BUCKET: my-aws-buket
   AWS_REGION: us-east-1
