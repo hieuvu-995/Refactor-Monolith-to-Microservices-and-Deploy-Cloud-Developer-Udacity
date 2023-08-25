@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
         - name: udagram-frontend
-          image: hieuvu995/udagram-frontend:v1
+          image: hieuvu995/udagram-frontend:v2
           imagePullPolicy: Always
           ports:
-            - containerPort: 8100
+            - containerPort: 80
           resources:
             requests:
               memory: "64Mi"
