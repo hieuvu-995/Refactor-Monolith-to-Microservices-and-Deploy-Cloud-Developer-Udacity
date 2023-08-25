@@ -4,7 +4,7 @@ metadata:
   name: env-configmap
   namespace: default
 data:
-  POSTGRES_HOST: postgres.chhkyawtabqg.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: udagram.chhkyawtabqg.us-east-1.rds.amazonaws.com
   JWT_SECRET: Th1s1sR4nd0mS3cr3t
   POSTGRES_DB: postgres
   AWS_BUCKET: my-s3-bucket-udacity

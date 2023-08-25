@@ -4,14 +4,14 @@ services:
 script:
   - echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
   - docker build -t udagram-api-feed ./udagram-api-feed
-  - docker tag udagram-api-feed $DOCKERHUB_USERNAME/udagram-api-feed:v1
+  - docker tag udagram-api-feed $DOCKERHUB_USERNAME/udagram-api-feed:v2
   - docker build -t udagram-api-user ./udagram-api-user
-  - docker tag udagram-api-user $DOCKERHUB_USERNAME/udagram-api-user:v1
+  - docker tag udagram-api-user $DOCKERHUB_USERNAME/udagram-api-user:v2
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend $DOCKERHUB_USERNAME/udagram-frontend:v1
+  - docker tag udagram-frontend $DOCKERHUB_USERNAME/udagram-frontend:v2
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy $DOCKERHUB_USERNAME/udagram-reverseproxy:v1
-  - docker push $DOCKERHUB_USERNAME/udagram-api-feed:v1
-  - docker push $DOCKERHUB_USERNAME/udagram-api-user:v1
-  - docker push $DOCKERHUB_USERNAME/udagram-frontend:v1
-  - docker push $DOCKERHUB_USERNAME/udagram-reverseproxy:v1
+  - docker tag udagram-reverseproxy $DOCKERHUB_USERNAME/udagram-reverseproxy:v2
+  - docker push $DOCKERHUB_USERNAME/udagram-api-feed:v2
+  - docker push $DOCKERHUB_USERNAME/udagram-api-user:v2
+  - docker push $DOCKERHUB_USERNAME/udagram-frontend:v2
+  - docker push $DOCKERHUB_USERNAME/udagram-reverseproxy:v2
