@@ -9,5 +9,5 @@ data:
   POSTGRES_DB: postgres
   AWS_BUCKET: my-s3-bucket-udacity
   AWS_REGION: us-east-1
-  AWS_PROFILE: default
+  AWS_PROFILE: new
   URL: http://localhost:8100
